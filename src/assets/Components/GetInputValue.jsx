@@ -38,4 +38,4 @@ function GetInputValue() {
     )
 }
 
-export default GetInputValue
+export default GetInputValue;
