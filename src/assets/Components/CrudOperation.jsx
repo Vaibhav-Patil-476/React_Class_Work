@@ -59,11 +59,11 @@ function CrudOperation() {
 
     return (
         <>
-            <h1>Crud Operation</h1>
             <div className="container mt-3">
+            <h1 className='text-center pb-5 mt-5'>Crud Operation</h1>
                 <div className="row">
                     {/* Form */}
-                    <div className="col-lg-4">
+                    <div className="col-lg-4 pe-5">
                         <form>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Name</label>

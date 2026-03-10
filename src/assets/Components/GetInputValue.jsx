@@ -13,10 +13,10 @@ function GetInputValue() {
 7
     return (
         <>
-            <h1>Get Input Value</h1>
 
             <div className="container mt-5">
-                <div className="row">
+            <h1 className='text-center pt-5'  >Get Input Value</h1>
+                <div className="row mt-5">
                     <div className="col-lg-4"></div>
                     <div className="col-lg-4">
                         <form>

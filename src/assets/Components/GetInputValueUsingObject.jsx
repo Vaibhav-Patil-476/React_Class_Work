@@ -29,8 +29,8 @@ function GetInputValue2() {
     return (
         <>
 
-            <h1>Get Input Value - Advance</h1>
             <div className="container mt-3">
+            <h1 className='text-center pb-5 mt-5'>Get Input Value - Advance</h1>
                 <div className="row">
                     <div className="col-lg-4"></div>
                     <div className="col-lg-4">

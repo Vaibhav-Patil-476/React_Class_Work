@@ -5,15 +5,17 @@ import Counter from './assets/Components/Counter'
 import CrudOperation from './assets/Components/CrudOperation'
 import GetInputValue2 from './assets/Components/GetInputValueUsingObject'
 import GetInputValue from './assets/Components/GetInputValue'
+import Header from './assets/Components/Header'
 
 function App() {
   return (
    <BrowserRouter>
+   <Header/>
    <Routes>
-    <Route path='/' element={<Counter/>}/>
-    <Route path="/" element={<CrudOperation/>}/>
-    <Route path='/' element={<GetInputValue2/>}/>
-    <Route path='/' element={<GetInputValue/>}/>
+    <Route path='/counter' element={<Counter/>}/>
+    <Route path="/crudopretion" element={<CrudOperation/>}/>
+    <Route path='/getinputvalueusingobject' element={<GetInputValue2/>}/>
+    <Route path='/getinputvalue' element={<GetInputValue/>}/>
 
    </Routes>
    </BrowserRouter>

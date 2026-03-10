@@ -2,38 +2,37 @@ import React, { useState } from 'react'
 
 function Counter() {
 
-    const [name, setName] = useState("");
-    const [surname, setSurname] = useState("");
+    const [count, setCount] = useState(0);
+    const [disabled, setDisabled] = useState(false)
 
-    function handleSubmit(e) {
-        e.preventDefault()
-        console.log("name : " + name)
-        console.log("surname : " + surname)
+    function increment() {
+        if (count >= 0) {
+            setDisabled(false)
+        }
+
+        setCount(count + 1)
+
+    };
+
+    function decrement() {
+        if (count < 1) {
+            setDisabled(true)
+        } else {
+            setCount(count - 1)
+        }
     };
 
     return (
         <>
-            <h1>Get Input Value</h1>
+        <div className='container text-center mt-5 pt-5'>
 
-            <div className="container mt-5">
-                <div className="row">
-                    <div className="col-lg-4"></div>
-                    <div className="col-lg-4">
-                        <form>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Name</label>
-                                <input onChange={(e) => setName(e.target.value)} type="text" class="form-control" id="name" aria-describedby="emailHelp" />
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Surname</label>
-                                <input onChange={(e) => setSurname(e.target.value)} type="text" class="form-control" id="surname" />
-                            </div>
-                            <button onClick={handleSubmit} type="submit" class="btn btn-primary">Submit</button>
-                        </form>
-                    </div>
-                    <div className="col-lg-4"></div>
-                </div>
-            </div>
+            <h1>Counter Task</h1>
+            <button onClick={increment} className='btn btn-primary'>+</button>
+
+            <h1>{count}</h1>
+
+            <button disabled={disabled} onClick={decrement} className='btn btn-primary'>-</button>
+        </div>
         </>
     )
 }
