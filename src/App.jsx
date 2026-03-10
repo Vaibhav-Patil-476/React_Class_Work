@@ -16,7 +16,6 @@ function App() {
     <Route path="/crudopretion" element={<CrudOperation/>}/>
     <Route path='/getinputvalueusingobject' element={<GetInputValue2/>}/>
     <Route path='/getinputvalue' element={<GetInputValue/>}/>
-
    </Routes>
    </BrowserRouter>
   )

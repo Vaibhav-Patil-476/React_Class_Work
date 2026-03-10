@@ -35,15 +35,16 @@ function CrudOperation() {
         });
 
     };
-
+//This functio for get data from mokapi
     function loadData() {
         axios.get("https://69aa8099e051e9456fa1945e.mockapi.io/students")
             .then((res) => {
                 console.log(res.data);
+                alert("get data Successfully.....")
                 setNewData(res.data);
             });
     };
-
+//use Effect use for load function or call function in one and avoid go to continues in loop  
     useEffect(() => {
         loadData()
     }, []);
