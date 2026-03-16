@@ -15,6 +15,7 @@ function CrudOperation() {
         setData({ ...data, [e.target.id]: e.target.value });
     };
 
+
     // HandleSubmit
     function handleSubmit(e) {
         e.preventDefault();
@@ -23,7 +24,7 @@ function CrudOperation() {
         axios.post("https://69aa8099e051e9456fa1945e.mockapi.io/students", data)
             .then((res) => {
                 console.log(res.data)
-                alert("Data Saved SuccesFully !!!") 
+                    
                 loadData();
             });
 
