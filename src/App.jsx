@@ -11,6 +11,7 @@ import AdminDashboard from './assets/Components/admin/AdminDashboard';
 import Sidebar from './assets/Components/Sidebar';
 import AddProduct from './assets/Components/admin/AddProduct';
 import Products from './assets/Components/admin/Products'
+import Contact from './assets/Components/Contact'
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
     <Route path="/crudopretion" element={<CrudOperation/>}/>
     <Route path='/getinputvalueusingobject' element={<GetInputValue2/>}/>
     <Route path='/getinputvalue' element={<GetInputValue/>}/>
+    <Route path='/contact' element={<Contact/>}/>
+
      <Route path={"/adminlogin"} element={<AdminLogin/>}/>
             <Route path={"/admin"} element={<Sidebar />} >
               <Route index element={<AdminDashboard />} />
