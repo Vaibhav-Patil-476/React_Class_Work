@@ -34,6 +34,9 @@ function Header() {
                 <Link to={"/contact"} class="nav-item text-decoration-none">
                 <a class="nav-link">Contact</a>
               </Link>
+                   <Link to={"/advancevalidation"} class="nav-item text-decoration-none">
+                <a class="nav-link">Advance Validation</a>
+              </Link>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
