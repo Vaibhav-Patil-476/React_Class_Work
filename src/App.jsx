@@ -12,7 +12,16 @@ import Sidebar from './assets/Components/Sidebar';
 import AddProduct from './assets/Components/admin/AddProduct';
 import Products from './assets/Components/admin/Products'
 import Contact from './assets/Components/Contact'
-import AdvanceValidation from './assets/Components/AdvanceValidation'
+import AdvanceValidation from './assets/Components/AdvanceValidation';
+import CompA from './components/LazyLoading/CompA';
+import CompB from './components/LazyLoading/CompB';
+
+import { lazy, Suspense } from 'react';
+import Loading from './components/LazyLoading/Loading';
+
+const CompC = lazy(() => import('./components/LazyLoading/CompC'))
+
+
 
 function App() {
   return (
@@ -25,6 +34,8 @@ function App() {
     <Route path='/getinputvalue' element={<GetInputValue/>}/>
     <Route path='/contact' element={<Contact/>}/>
     <Route path='/advancevalidation' element={<AdvanceValidation/>}/>
+    <Route path='/advancevalidation' element={<AdvanceValidation/>}/>
+
 
 
      <Route path={"/adminlogin"} element={<AdminLogin/>}/>
