@@ -14,7 +14,7 @@ function GetInputValue2() {
     };
 
     function handleSubmit(e) {
-        e.preventDefa ult();
+        e.preventDefat();
         console.log(data);
 
         setData({
